@@ -8,9 +8,9 @@ In the outliner panel, right-click to create a new collection, and name it `EXPO
 
 *When running the exporter, any object inside of this EXPORTS collection will have CFrame data written out on export.*
 
-Optionally, you can also have the transforms objects be calculated relative to a root transform on export (Useful if you want to move an entire rig in blender without baking that translation to animation data.) 
+Optionally, you can also have the transforms objects be calculated relative to a root transform on export. (Useful if you want to move an entire rig in blender without baking that translation to animation data.)
 
-As long as the object is named `_ROOT`, it will work. The root object does not have to be in the EXPORTS collection.
+This behavior can be achieved by having an object named `CF_ROOT` somwhere in the hierarchy. The root object does not have to be in the `EXPORTS` collection.
 
 ![alt text](https://github.com/zoebasil/blender-cf-exporter/raw/master/readme_imgs/root.png)
 

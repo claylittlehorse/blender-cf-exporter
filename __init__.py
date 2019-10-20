@@ -2,7 +2,7 @@ import bpy, math, re, bpy_extras
 from mathutils import Matrix
 
 EXPORT_COLLECTION_NAME = "EXPORT"
-ROOT_OBJ_NAME = "_ROOT"
+ROOT_OBJ_NAME = "CF_ROOT"
 
 # Rotation matrix to transform a Z-up matrix in blender to a Y-up roblox CF
 # matrix
