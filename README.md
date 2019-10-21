@@ -19,11 +19,10 @@ This behavior can be achieved by having an object named `CF_ROOT` somwhere in th
 
 ![alt text](https://github.com/zoebasil/blender-cf-exporter/raw/master/readme_imgs/root.png)
 
-Finally, to export CFrames, go to *File > Export > Roblox CFrames*, and save the file wherever you'd like.
-
-![alt text](https://github.com/zoebasil/blender-cf-exporter/raw/master/readme_imgs/export_dropdown.png)
-
-The range of frames exported is determined by the start and end positions of the scene playback.
+You can determine range of frames exported by changing the start and end positions of the scene playback.
 
 ![alt text](https://github.com/zoebasil/blender-cf-exporter/raw/master/readme_imgs/start_end.png)
 
+Finally, to export CFrames, go to *File > Export > Roblox CFrames*, and save the file wherever you'd like.
+
+![alt text](https://github.com/zoebasil/blender-cf-exporter/raw/master/readme_imgs/export_dropdown.png)
