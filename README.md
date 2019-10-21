@@ -11,7 +11,7 @@ In the outliner panel, right-click to create a new collection, and name it `EXPO
 
 ![alt text](https://github.com/zoebasil/blender-cf-exporter/raw/master/readme_imgs/collection_2.png)
 
-*When running the exporter, any object inside of this EXPORT collection will have CFrame data written out on export.*
+When running the exporter, any object inside of this EXPORT collection will have CFrame data written out on export.
 
 Optionally, you can also have the transforms objects be calculated relative to a root transform on export. (Useful if you want to move an entire rig in blender without baking that translation to animation data.)
 
