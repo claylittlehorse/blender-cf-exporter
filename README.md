@@ -5,7 +5,7 @@ A simple, lightweight addon to export CFrame data out from blender. This tool du
 Download the latest [addon.py](https://github.com/zoebasil/blender-cf-exporter/releases/download/1.0/addon.py) and save it somewhere. To install the addon, in Blender, go to *Edit > Preferences > Addons* and click the *Install* button near the top right corner. Navigate to wherever you saved the `addon.py` file and then confirm the installation. Then, make sure you enable the addon.
 
 ## Export Setup
-For quick setup reference, you can download and open the [example file](https://github.com/zoebasil/blender-cf-exporter/releases/download/1.0/Example.blend) from the releases page
+_For quick setup reference, you can download and open the [example file](https://github.com/zoebasil/blender-cf-exporter/releases/download/1.0/Example.blend) from the releases page._
 
 In the outliner panel, right-click to create a new collection, and name it `EXPORT`, as shown below.
 
