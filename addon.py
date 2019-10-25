@@ -77,7 +77,7 @@ def getAnimationCFrames():
 #	 \n = Newline
 #	 \t = Tab
 # 	{} = Argument pos for .format
-luaTempltStr = "local c = CFrame.new()\nreturn {{\n\tfps = {},\n\tframes = {{\n{}\n\t}}\n}}"
+luaTempltStr = "local c = CFrame.new\nreturn {{\n\tfps = {},\n\tframes = {{\n{}\n\t}}\n}}"
 frameTempltStr = "{{ -- {}\n{}\n\t\t}}"
 cfTempltString = "\t\t\t{} = c({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {})"
 
