@@ -1,23 +1,19 @@
-import bpy, math, re, bpy_extras
+import bpy, math, re, bpy_extras, mathutils
 from mathutils import Matrix
 
 EXPORT_COLLECTION_NAME = "EXPORT"
 ROOT_OBJ_NAME = "CF_ROOT"
 
-# Rotation matrix to transform a Z-up matrix in blender to a Y-up roblox CF
-# matrix
-transformToYUpMatrix = bpy_extras.io_utils.axis_conversion(from_forward='-Y', from_up='Z', to_forward='Z', to_up='Y').to_4x4()
-
-# Blender matrix to roblox cframe components
-def matrixToCFrameComponents(matrix):
-	# matrix @ matrix in python equivalent to cf * cf in roblox
-	yUpMatrix = transformToYUpMatrix @ matrix
-	cframe_components = [yUpMatrix[0][3], yUpMatrix[1][3], yUpMatrix[2][3],
-		yUpMatrix[0][0], yUpMatrix[0][1], yUpMatrix[0][2],
-		yUpMatrix[1][0], yUpMatrix[1][1], yUpMatrix[1][2],
-		yUpMatrix[2][0], yUpMatrix[2][1], yUpMatrix[2][2]
-	]
-	return cframe_components
+# Componentizes z-up matrix as y-up cframe
+def matrixToCFrameComponents(mat):
+    # switch z and y pos cause blender uses z-up coordinate system
+    cframe_components = [
+		mat[0][3],  mat[2][3], -mat[1][3],
+        mat[0][0], mat[0][2], -mat[0][2],
+        mat[2][0], mat[2][2], -mat[2][1],
+    	-mat[1][0], -mat[1][2], mat[1][1]
+    ]
+    return cframe_components
 
 # Get the transforms from the current frame state
 def getCurrentTransforms():
